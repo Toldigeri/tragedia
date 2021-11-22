@@ -1,2 +1,2 @@
-# Skill-checkup
-Test webdesign - proof of knowledge(?)
+# Madách ember tragédiája
+Magyar projekt

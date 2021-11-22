@@ -121,6 +121,7 @@ h1 {
     color: var(--text-secondary);
     text-decoration: none;
     align-items: center;
+    margin-top: 14.5px;
 }
 
 .nav-item {
@@ -261,13 +262,6 @@ h1 {
     align-items: center;
     text-align: center;
 }
-
-.header-content:hover .title {
-    animation-name: mozog;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
 /*=== HEADER CONTENT - END ===*/
 /*=== HEADER - END ===*/
 
@@ -295,8 +289,8 @@ h1 {
 }
 /*=== INTRODUCTION - END ===*/
 
-/*=== PROJECT POSTS ===*/
-.proj-container {
+/*=== postECT POSTS ===*/
+.post-container {
     margin: 5rem auto;
     width: 100%;
     height: auto;
@@ -307,7 +301,7 @@ h1 {
     margin: 0px auto;
 }
 
-.open-proj {
+.open-post {
     border: none;
     margin: 5px auto;
     font-size: 16px;
@@ -315,7 +309,7 @@ h1 {
     cursor: pointer;
 }
 
-.proj-header {
+.post-header {
     width: 100%;
     font-size: 30px;
     font-weight: 900;
@@ -326,19 +320,19 @@ h1 {
     margin-bottom: 0.25rem;
 }
 
-.proj-header:hover .forog {
+.post-header:hover .forog {
     transform: rotate(90deg);
     transition: transform 200ms ease;
 }
 
-.proj-frame #hhaven-proj {
+.post-frame #hhaven-post {
     display: none;
     height: 0rem;
     width: 0rem;
     position: relative;
 }
 
-.proj-header:hover .proj-frame #hhaven-proj {
+.post-header:hover .post-frame #hhaven-post {
     display: flex;
     height: 50rem;
     width: 100%;
@@ -346,23 +340,33 @@ h1 {
     margin: 0px auto;
 }
 
-/*.proj-container .proj-frame {
+/*.post-container .post-frame {
     height: 50rem;
     width: 100%;
     border:3px solid black;
     margin: 0px auto;
 }*/
 
-.crt-proj {
+.crt-post {
     width: 100%;
     height: 30rem;
     min-width: 10rem;
     display: flex;
     border: 3px solid black;
-    margin: 0px auto;
 }
 
-/*.hhaven-proj {
+.crt-post p {
+    margin: 1.875rem 3.75rem;
+    font-size: 1.30rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .title{
+        font-size: 16px;
+    }
+}
+
+/*.hhaven-post {
     width: 100%;
     height: 50rem;
     min-width: 10rem;
@@ -370,12 +374,4 @@ h1 {
     border: 3px solid black;
     margin: 0px auto;
 }*/
-/*=== PROJECT POSTS - END ===*/
-
-@keyframes mozog {
-    0%{transform: rotate(0deg);}
-    25%{transform: rotate(-5deg);}
-    50%{transform: rotate(5deg);}
-    75%{transform: rotate(-5deg);}
-    100%{transform: rotate(0deg);}
-}
+/*=== postECT POSTS - END ===*/
