@@ -67,6 +67,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.25px;
+    min-width: 22rem;
 
 }
 
@@ -122,6 +123,7 @@ h1 {
     text-decoration: none;
     align-items: center;
     margin-top: 14.5px;
+    margin-right: 15rem;
 }
 
 .nav-item {
@@ -159,7 +161,7 @@ h1 {
 
 .navbar:hover {
     height: 100vh;
-    width: 8rem;
+    width: 11.5rem;
 }
 
 .navbar:hover .nav-link {
@@ -348,16 +350,18 @@ h1 {
 }*/
 
 .crt-post {
-    width: 100%;
-    height: 30rem;
-    min-width: 10rem;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    min-width: 22rem;
     display: flex;
     border: 3px solid black;
 }
 
 .crt-post p {
-    margin: 1.875rem 3.75rem;
+    margin: 1.875rem 3.75rem 1.875rem;
     font-size: 1.30rem;
+    line-height: 1.85rem;
 }
 
 @media only screen and (max-width: 700px) {
