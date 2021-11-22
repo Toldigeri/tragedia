@@ -67,8 +67,6 @@ body {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.25px;
-    min-width: 22rem;
-
 }
 
 body::-webkit-scrollbar {
@@ -97,9 +95,15 @@ h1 {
 /*=== MAIN ELEMENTS - END ===*/
 
 /*=== NAV MENU ===*/
-.navbar {
-    width: 8rem;
+.cover {
+    width: 100%;
+    background-color: var(--bg-primary);
     height: 4.5rem;
+}
+
+.navbar {
+    width: 11.5rem;
+    height: inherit;
     position: fixed;
     background-color: var(--bg-secondary);
     transition: height 200ms ease;
@@ -124,6 +128,7 @@ h1 {
     align-items: center;
     margin-top: 14.5px;
     margin-right: 15rem;
+    position: relative;
 }
 
 .nav-item {
@@ -182,7 +187,7 @@ h1 {
     background-color: var(--bg-secondary);
 }
 
-/*=== HEADER LOGO ===*/
+/*/*=== HEADER LOGO ===*/
 .hover-box {
     min-width: 69px;
     width: 64px;
@@ -249,7 +254,7 @@ h1 {
 .hover-box:hover .logo-item {
     display: flex;
 }
-/*=== HEADER LOGO - END ===*/
+/*=== HEADER LOGO - END ===**/
 
 /*=== HEADER CONTENT ===*/
 .header-content {
@@ -351,15 +356,14 @@ h1 {
 
 .crt-post {
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
     height: auto;
-    min-width: 22rem;
     display: flex;
     border: 3px solid black;
 }
 
 .crt-post p {
-    margin: 1.875rem 3.75rem 1.875rem;
+    margin: 1.875rem 1.875rem 3.750rem;
     font-size: 1.30rem;
     line-height: 1.85rem;
 }
