@@ -1,30 +1,81 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="tragedia.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madách Imre: Az ember tragédiája</title>
+    <title>Webpage</title>
+    <link rel="stylesheet" href="files\style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="files\all.css">
+    <link rel="icon" href="./Images/fire.png" >
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">Áron & Gergő</label>
-        <ul>
-            <li><a href="madach.html" class="active">Madách Imre</a></li>
-            <li><a href="#">A paradicsomon kívül</a></li>
-            <li><a href="#">Beszámoló</a></li>
-            <li><a href="#">Összefoglaló</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h1>Madách Imre: Az ember tragédiája</h1>
-        <h2>A paradicsomon kívül</h2>
-    </section>
+    <div class="main-header">
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-logo">
+                    <i class="fas fa-bars fa-3x"></i>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="#projects-start" class="nav-link">
+                        <i class="fas fa-align-left fa-2x"></i>
+                        <span class="link-text">Projects</span>
+                    </a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-align-left fa-2x"></i>
+                        <span class="link-text">Contact</span>
+                    </a>
+                </li>
+    
+            </ul>
+        </nav>
+        
+        <div class="header-content">
+            <h1 class="title">Welcome to my website!</h1>
+        </div>
+        <div class="hover-box">
+            <div class="header-logo" title="My profiles">
+                <ul class="logo-list">
+                    <li class="logo-item">
+                        <a href="#" class="list-link">
+                            <span class="list-text">Github</span>
+                        </a>
+                    </li>
+
+                    <li class="logo-item">
+                        <a href="#" class="list-link">
+                            <span class="list-text">Github</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="intro"><img class ="profile-img" src="Images/tempImg.jpg" title="That's me!" alt="A picture of myself">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a nisl commodo, iaculis eros viverra, dictum ligula. Pellentesque euismod, ligula sed pretium pellentesque, dolor tellus maximus diam, quis posuere nisi est eu neque. Duis nulla tellus, tempus eget turpis sit amet, commodo auctor massa. Suspendisse accumsan blandit urna nec congue. Aliquam erat volutpat. Fusce mi leo, condimentum in tincidunt sit amet, placerat ac turpis. Sed egestas sit amet neque sit amet mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas laoreet facilisis luctus. Nam vitae elementum velit. Sed viverra gravida lectus, vel cursus nisl faucibus sit amet. Fusce porta, justo at cursus facilisis, libero libero iaculis nisi, vel pulvinar arcu felis quis lorem. Morbi ac fermentum nunc.</div>
+        <div class="main-posts">
+            <div class="proj-container">
+                <div class="proj-header" id="projects-start"><i class="fas fa-angle-right fa-1x forog"></i>My first longer project: a webpage made with framesets! i was very proud, because it was the first time i made something bigger from my own skillset!
+                    <div class="proj-frame">
+                        <iframe id="hhaven-proj" src="iframes/hindex.html" scrolling="no"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj-container">
+                <div class="proj-header">Element creation test page: my second attempt trying to create elements in JS</div>
+                <iframe class="crt-proj" src="iframes/index3.html" scrolling="no"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
 </body>
 </html>
